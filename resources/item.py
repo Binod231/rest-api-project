@@ -12,7 +12,8 @@ blp = Blueprint("Items", __name__, description="Operations on items")
 
 @blp.route("/item/<int:item_id>")
 class Item(MethodView):
-    @jwt_required()
+    # @blp.doc(security="bearerAuth")
+    # @jwt_required()
     @blp.response(200,ItemSchema)
     def get(self, item_id):
         item = ItemModel.query.get_or_404(item_id)

@@ -5,7 +5,7 @@ from flask import Flask, jsonify
 from flask_smorest import Api
 from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 
 from db import db
@@ -19,7 +19,7 @@ from resources.user import blp as UserBlueprint
 
 def create_app(db_url=None):
     app = Flask(__name__)
-    load_dotenv()
+    # load_dotenv()
 
     # app.config["DEBUG"] = True
     app.config["PROPAGATE_EXCEPTIONS"] = True
@@ -41,6 +41,16 @@ def create_app(db_url=None):
     app.config["JWT_ACCESS_TOKEN_EXPIRES"] = ACCESS_EXPIRES
     jwt = JWTManager(app)  # noqa: F841, F811
 
+
+
+    api.spec.components.security_schemes['bearerAuth'] = {
+        'type': 'http',
+        'scheme': 'bearer',
+        'bearerFormat': 'JWT'
+    }
+
+    # Set the security requirement globally or for specific endpoints
+    api.spec.security = [{'bearerAuth': []}]
 
     @jwt.user_lookup_loader
     def user_lookup_callback(jwt_header, jwt_data):
@@ -103,6 +113,8 @@ def create_app(db_url=None):
                     }
             )
         )
+
+
 
 
     with app.app_context():
