@@ -24,7 +24,7 @@ def create_app(db_url=None):
     load_dotenv()
 
     connection = redis.from_url(
-    os.getenv("rediss://red-cqll1hg8fa8c73b37qg0:mFOauHW4d3bqgV3Bo8eu5jnJyuErt8SQ@oregon-redis.render.com:6379")
+    os.getenv("REDIS_URL")
 )  # Get this from Render.com or run in Docker
     app.queue = Queue("emails", connection=connection)
 
