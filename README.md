@@ -20,7 +20,10 @@ The outer UI look like :
 ![Screenshot (620)](https://github.com/Binod231/rest-api-project/assets/110877218/1d9b2b74-bb75-482c-a0ae-8102870c3b83)
 ![Screenshot (639)](https://github.com/Binod231/rest-api-project/assets/110877218/014586ab-68ce-4123-af84-f8eb9db8b9d3)
 ![Screenshot (640)](https://github.com/Binod231/rest-api-project/assets/110877218/5f311026-25fd-47eb-ab64-ecc4ecb840a5)
+<<<<<<< HEAD
 ![Screenshot (640)](https://github.com/Binod231/rest-api-project/assets/110877218/5f311026-25fd-47eb-ab64-ecc4ecb840a5)
+=======
+>>>>>>> 2bf4223cf17bbd173a73d8183a3ebdc9962fe81a
 ![Screenshot (641)](https://github.com/Binod231/rest-api-project/assets/110877218/faa4258e-c303-4c8c-8b6a-be0f65370bc3)
 
 TESTING THE OPERATIONS OF STORES IN INSOMNIA
