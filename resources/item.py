@@ -10,6 +10,7 @@ from schema import ItemSchema, ItemUpdateSchema
 blp = Blueprint("Items", __name__, description="Operations on items")
 
 
+
 @blp.route("/item/<int:item_id>")
 class Item(MethodView):
     # @blp.doc(security="bearerAuth")

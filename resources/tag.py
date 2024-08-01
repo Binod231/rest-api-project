@@ -9,6 +9,7 @@ from schema import TagSchema, TagItemSchema
 
 blp = Blueprint("Tags", "tags", description="Operations on items")
 
+
 @blp.route("/store/<int:store_id>/tag")
 class TagsInStore(MethodView):
     @jwt_required()

@@ -26,6 +26,7 @@ class Store(MethodView):
         return {"message": "Stored deleted."}
 
 
+
 @blp.route("/store")
 class StoreList(MethodView):
     @jwt_required()

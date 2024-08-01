@@ -18,3 +18,4 @@ class TokenBlocklist(db.Model):
         server_default=func.now(),
         nullable=False,
     )
+    

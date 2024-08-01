@@ -9,3 +9,4 @@ class ItemTags(db.Model):
     item_id = db.Column(db.Integer, db.ForeignKey("items.id"))
     tag_id = db.Column(db.Integer, db.ForeignKey("tags.id"))
     
+    

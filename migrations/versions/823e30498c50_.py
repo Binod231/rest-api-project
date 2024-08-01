@@ -51,3 +51,4 @@ def downgrade():
     sa.UniqueConstraint('token')
     )
     # ### end Alembic commands ###
+

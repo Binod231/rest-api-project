@@ -48,4 +48,4 @@ TESTING THE OPERATIONS OF TAGS IN INSOMNIA
 ![Screenshot (656)](https://github.com/Binod231/rest-api-project/assets/110877218/6f5d035f-56f9-47e2-8de9-1ebaf6182093)
 ![Screenshot (657)](https://github.com/Binod231/rest-api-project/assets/110877218/839ae6b5-7371-4a36-b337-d90d44bd6132)
 ![Screenshot (658)](https://github.com/Binod231/rest-api-project/assets/110877218/639e4b9e-b4c8-4bdd-aa06-f224de56b7b5)
-![Screenshot (659)](https://github.com/Binod231/rest-api-project/assets/110877218/0a5fe11c-e3d8-4546-9bb3-d9c90d72e9e1)
+![Screenshot (659)](https://github.com/Binod231/rest-api-project/assets/110877218/0a5fe11c-e3d8-4546-9bb3-d9c90d72e9e1) 
