@@ -12,14 +12,14 @@ blp = Blueprint("Tags", "tags", description="Operations on items")
 
 @blp.route("/store/<int:store_id>/tag")
 class TagsInStore(MethodView):
-    @jwt_required()
+    # @jwt_required()
     @blp.response(200, TagSchema(many=True))
     def get(self, store_id):
         store = StoreModel.query.get_or_404(store_id)
 
         return store.tags.all()
     
-    @jwt_required()
+    # @jwt_required()
     @blp.arguments(TagSchema)
     @blp.response(201, TagSchema)
     def post(self, tag_data, store_id):
@@ -46,9 +46,9 @@ class TagsInStore(MethodView):
 
 
 
-@blp.route("/item?<int:item_id>/tag/<int:tag_id>")
+@blp.route("/item<int:item_id>/tag/<int:tag_id>")
 class LinkTagsToItem(MethodView):
-    @jwt_required()
+    # @jwt_required()
     @blp.response(201, TagSchema)
     def post(self,item_id, tag_id):
         item = ItemModel.query.get_or_404(item_id)
@@ -67,7 +67,7 @@ class LinkTagsToItem(MethodView):
 
         return tag
     
-    @jwt_required()
+    # @jwt_required()
     @blp.response(200, TagItemSchema)
     def delete(self,item_id, tag_id):
         item = ItemModel.query.get_or_404(item_id)
@@ -89,7 +89,7 @@ class LinkTagsToItem(MethodView):
 
 @blp.route("/tag/<int:tag_id>")
 class Tag(MethodView):
-    @jwt_required()
+    # @jwt_required()
     @blp.response(200, TagSchema)
     def get(self, tag_id):
         tag = TagModel.query.get_or_404(tag_id)
@@ -107,7 +107,7 @@ class Tag(MethodView):
         description="Returned if the tag is assigned to one or mre item. In this case, t he tag is not deleted."
         )
     
-    @jwt_required()
+    # @jwt_required()
     def delete(self, tag_id):
         tag = TagModel.query.get_or_404(tag_id)
 

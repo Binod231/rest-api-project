@@ -20,7 +20,7 @@ class Item(MethodView):
         item = ItemModel.query.get_or_404(item_id)
         return item
 
-    @jwt_required()
+    # @jwt_required()
     def delete(self, item_id):
         item = ItemModel.query.get_or_404(item_id)
         db.session.delete(item)
@@ -28,7 +28,7 @@ class Item(MethodView):
         return {"message": "item deleted."}
     
     
-    @jwt_required()      
+    # @jwt_required()      
     @blp.arguments(ItemUpdateSchema)
     @blp.response(200, ItemSchema)
     def put(self,item_data, item_id):
@@ -47,13 +47,13 @@ class Item(MethodView):
 
 @blp.route("/item")
 class ItemList(MethodView):
-    @jwt_required()
+    # @jwt_required()
     @blp.response(200, ItemSchema(many=True))
     def get(self):
         return ItemModel.query.all()
 
 
-    @jwt_required()
+    # @jwt_required()
     @blp.arguments(ItemSchema)
     @blp.response(200,ItemSchema)
     def post(self, item_data):

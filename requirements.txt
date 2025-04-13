@@ -1,14 +1,16 @@
-flask
-flask-smorest
-python-dotenv
-sqlalchemy
-flask-sqlalchemy
-marshmallow
-flask-jwt-extended
-passlib
-flask-migrate
-requests
-rq
-redis
-# gunicorn
-# psycopg2
+flask==3.0.2
+flask-smorest==1.2.0
+python-dotenv==1.0.1
+sqlalchemy==2.0.25
+flask-sqlalchemy==3.1.1
+marshmallow==3.20.2
+flask-jwt-extended==4.5.3
+passlib==1.7.4
+flask-migrate==4.0.5
+requests==2.31.0
+rq==1.16.1
+redis==5.0.1
+gunicorn==21.2.0
+psycopg2-binary==2.9.9
+opencv-python-headless==4.9.0.80
+python-dotenv==1.0.1

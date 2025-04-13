@@ -1,7 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.python-version
+.pytest_cache/
+venv/
+env/
+.venv/
+ENV/
+
+# Database
+*.db
+*.sqlite
+
+# Environment files
 .env
-.venv
-data.db
-.VScode
-*.pyc
-.DS_Store
-__pycache__
+
+# Windows
+Thumbs.db
+
+
+
+# Redis (if applicable)
+dump.rdb
+
+
+# Flask-Migrate
+/migrations/versions/*
+!migrations/versions/.gitkeep  # Preserve folder
+
+# Keep these critical files
+!migrations/alembic.ini
+!migrations/env.py
+!migrations/script.py.mako
