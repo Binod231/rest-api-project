@@ -16,6 +16,8 @@ Flask-Smorest: Simple, powerful REST API framework for Flask.
 Docker: Containerize your application for easy deployment.
 Docker Compose: Simplify multi-container Docker applications.
 
+Live Preview: https://stores-restapi-3ewv.onrender.com/swagger-ui
+
 The outer UI look like :
 ![Screenshot (620)](https://github.com/Binod231/rest-api-project/assets/110877218/1d9b2b74-bb75-482c-a0ae-8102870c3b83)
 ![Screenshot (639)](https://github.com/Binod231/rest-api-project/assets/110877218/014586ab-68ce-4123-af84-f8eb9db8b9d3)
